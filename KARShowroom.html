@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAR Showroom</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .img-bg {
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .card-img-top {
+        height: 300px;
+      }
+
+      .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .btn-lg-custom {
+        font-size: 1.25rem;
+        padding: 0rem 3rem;
+      }
+
+      .card-img {
+        border-radius: 0;
+        background-repeat: no-repeat;
+        background-size: 110%;
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 75px;
+        margin-bottom: 10px;
+      }
+
+      .warna-text li a {
+        color: black;
+      }
+
+      .nav-gap .nav-item {
+        margin: 0 25px;
+      }
+
+      .card-img {
+        object-fit: cover;
+      }
+
+      .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .form-control::placeholder {
+        color: black;
+      }
+      .dropdown-menu {
+        background-color: white;
+      }
+      
+      /* carousel */
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+   
+}
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-transparent fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="pngwing.com.png"
+            alt="Logo"
+            width="150"
+            height="45"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center nav-gap warna-text"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EXPERIENCES</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Wuling Center</a></li>
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Book a Test Drive</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR PRODUCT</a>
+            </li>
+          </ul>
+          <form class="d-flex placehold-color" role="search">
+            <input
+              class="form-control me-2 bg-transparent"
+              type="search bg-darck"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="WULING.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="keluarga.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="BINGUO.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="AIR.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <div class="card bg-dark text-white">
+      <img src="cover.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <div class="btn-container">
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            More Information
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            Download Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark text-white">
+      <img
+        src="https://sgmwmultifinance.id/wp-content/uploads/2024/01/binguo-motomobi.jpg"
+        class="card-img"
+        alt="..."
+      />
+      <div class="card-img-overlay">
+        <div class="btn-container">
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            More Information
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            Download Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-dark text-white">
+      <img src="clod33.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <div class="btn-container">
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            More Information
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg-custom">
+            Download Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row img-bg py-5">
+      <div class="col-12 col-md-4">
+        <div
+          class="card bg-body-tertiary bg-success p-2 text-dark bg-opacity-50"
+        >
+          <img
+            src="https://wuling.id/assets/images/air-ev/color/xWhite.png.pagespeed.ic.X-znZux25p.webp"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Air EV-Long Range</h5>
+            <h6>RP. 275.000.000</h6>
+            <p class="card-text">Mobil Listrik</p>
+            <a href="AirEv.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div
+          class="card bg-body-tertiary bg-success p-2 text-dark bg-opacity-50"
+        >
+          <img
+            src="milk_tea.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Binguo EV - 410 km - premium Range</h5>
+            <h6>RP.327.000.000</h6>
+            <p class="card-text">Mobil listrik</p>
+            <a href="BinguoEv.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div
+          class="card bg-body-tertiary bg-success p-2 text-dark bg-opacity-50"
+        >
+          <img
+            src="https://wuling.id/assets/images/cloud-ev/x624x392-type-cloudev.png.pagespeed.ic.9FX4gzXJfH.webp"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cloud EV - 460 KM</h5>
+            <h6>RP.378.800.000</h6>
+            <p class="card-text">Mobil listrik</p>
+            <a href="cloudev.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
